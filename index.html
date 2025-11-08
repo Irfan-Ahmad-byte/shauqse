@@ -1,1 +1,58 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shauq</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg': '#F5F5F4',
+              'brand-dark': '#1F2937',
+              'brand-secondary': '#6B7280',
+              'brand-success': '#22C55E', // Green-500
+              'white-08': 'rgba(255, 255, 255, 0.08)',
+              'white-24': 'rgba(255, 255, 255, 0.24)',
+              'white-70': 'rgba(255, 255, 255, 0.70)',
+            },
+            borderRadius: {
+              '4xl': '2rem',
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'scale-in': {
+                '0%': { opacity: '0', transform: 'scale(0.95)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              },
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+              'scale-in': 'scale-in 0.6s ease-in-out forwards',
+            }
+          }
+        }
+      }
+    </script>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-CChrUyzP.js"></script>
+</head>
+  <body class="bg-brand-bg">
+    <div id="root"></div>
+  </body>
+</html>
